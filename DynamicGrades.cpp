@@ -25,7 +25,6 @@ void sortScores(double *arr, int size) {
     }
 }
 void printScores(double *arr, int size) {
-    cout << "Printing Scores:" << endl;
     cout << fixed << setprecision(2);
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
@@ -51,8 +50,10 @@ int main() {
     if (numTests > 0) {
         double *scores = new double[numTests];
         getScores(scores, numTests);
+        cout << "Scores before sorting:" << endl;
         printScores(scores, numTests);
         sortScores(scores, numTests);
+        cout << "Scores after sorting:" << endl;
         printScores(scores, numTests);
         double average = calculateAverage(scores, numTests);
         cout << "Average Score: " << fixed << setprecision(2) << average << endl;
