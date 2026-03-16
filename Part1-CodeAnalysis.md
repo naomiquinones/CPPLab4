@@ -1,0 +1,3 @@
+In the processData function, `int val` is passed by value, whereas `int* ptr` is passed by reference.
+The final value of `alpha` is 20. It doesn’t change because since we passed by value, we are not changing the value stored at the location of that variable.
+The final value of `beta` is 30. It changes because the code says to change the value of the variable stored at the location indicated by the pointer.

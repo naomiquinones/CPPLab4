@@ -61,8 +61,5 @@ int main() {
         scores = nullptr;
     }
 
-
-
-
     return 0;
 }
