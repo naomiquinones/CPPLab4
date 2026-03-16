@@ -57,6 +57,7 @@ int main() {
         double average = calculateAverage(scores, numTests);
         cout << "Average Score: " << fixed << setprecision(2) << average << endl;
         delete[] scores;
+        scores = nullptr;
     }
 
 
